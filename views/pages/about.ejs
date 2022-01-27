@@ -1,0 +1,153 @@
+<body >
+
+    <section class="news" >
+    
+    
+        <div class="teams">
+            <h1>About <span class="us">Us</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               
+                <!-- <span class="teams2">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.  -->
+            </p>
+    
+            <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+    </p>
+            <button>Read More</button>
+          
+         <!-- <p>It is a paradisematic country, in which roasted parts of sentences fly into your  mouth. Pityful a rethoric question.</p>
+         <p>It is a paradisematic country, in which roasted parts of sentences fly into your  mouth. Pityful a rethoric question.</p> -->
+        
+        </div>  
+    
+    </section>
+         <div class="foods-category">
+            <h5>Meet The Team</h5>
+           <section class="second-tables features-two">
+           
+              <div class="foods1 profile1">
+                <img src="./assets/Profile2.png" />
+                  <div class='food-response'> Asante</div>
+                  <div class="foods_detail">C. E. O</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px; display: flex;flex-direction: column;"></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+    
+              <div class="foods1">
+                <img src="./assets/profile.jpg" />
+                  <div class='food-response'> Kofi</div>
+                  <div class="foods_detail">Chef</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px "></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+              <div class="foods1">
+                <img src="./assets/Profile1.jpg" />
+                  <div class='food-response'> Bloh</div>
+                  <div class="foods_detail">Manager</div>
+                  <ul class="socils"> 
+                   <li>  <i class="fa fa-twitter " style=" font-size:16px; display: flex;flex-direction: column;"></i> </li>
+                   <li><i class="fa fa-facebook " style=" font-size:16px"></i>
+                    <li><i class="fa fa-linkedin " style=" font-size:16px"></i></li>
+                    <li><i class="fa fa-instagram " style=" font-size:16px"></i></li>
+                   </ul>
+              </div>
+              <div>
+                <div class="flex flex-col items-center justify-center">
+                    <% if (comments) { %>
+                    <div class="w-full h-full">
+                        <!-- user comments --
+                               let pos = time.indexOf('GMT')
+                                                let date = time.substring(0, pos) 
+                         loop through comments -->
+                        <% for (let comment of comments) { %>
+        
+        
+        
+                            <div class="comment-item-content m-4 p-4 rounded-xl bg-gray-100">
+                                <div class="comment-item-content-header flex justify-between items-center mx-auto">
+                                    <div class="comment-item-content-header-left">
+                                   <span class="text-gray-600 text-4xl font-bold"> <%= comment.name %></span>
+                                   <span class="text-gray-600 text-2xl font-bold"> <%= comment.email %></span>
+                                        <!-- <img src="${comment.avatar}" alt="avatar"> -->
+                                    </div>
+                                    <div class="comment-item-content-header-right">
+                                        <span class="text-gray-600 p-4">
+                                            <%=  comment.createdAt.toUTCString()%>
+                                        </span>
+            
+                                     </div>
+                                </div>
+                                <div>
+                                    <p class="text-gray-600 text-2xl p-4" style="font-weight: 500;">
+                                        <%= comment.comment %>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+            
+                            <% } %>
+                                                                                                 
+                    </div>
+                    <% } %>
+                </div>
+              </div>
+          </section>
+      </div>
+      
+    
+    
+    
+     
+    
+    
+    </body>
+
+    <style>
+        .commenters {
+            /* margin-top: 10px; */
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .comment-name {
+            text-align: center;
+
+        }
+
+        .commment-email {
+            margin-left: 70%;
+            color: rgb(184, 178, 178);
+
+        }
+        
+        .edit-comment {
+            margin-top: -30px;
+            margin-left: 70%;
+            align-items: center;
+            text-align: center;
+          
+        }
+        
+        .real-comment {
+            /* padding-top: -100px; */
+            text-align: center;
+            /* margin-left: 70px; */
+            font-size: 150%;
+            
+        }
+        
+
+    </style>
+    
+    

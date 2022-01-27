@@ -1,0 +1,100 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+
+    <form class=" form-box"  id="form-input" actions='/order/edit' method= 'post' style="width:500px;">
+
+        <div class="menu-form">
+            <label >Client</label>
+            <input value="<%- order.client %>" type="client"  id="client" name= "name" placeholder="Enter your full name" style="font-size: -1rem;" required>
+        
+        </div>
+            
+        <div >
+            <label class="menu-form">Menu</label>
+            <input value="<%- order.menu %>" type="text" id="menu" name='menu'  placeholder="Enter price" style="font-size: -1rem;" required>
+        </div>
+            
+
+            <div class="menu-form">
+                <label >Order Date </label>
+                <input value="<%- order.order_date %>" type="order_date"  id="order_date" name='status'  placeholder="Enter status" style="font-size: -1rem;" required>
+             
+            </div>
+
+            <div class="menu-form">
+                <label >Amount</label>
+                <input value="<%- order.amount %>" type="text" id="amount" name='amount' placeholder="Enter amount" style="font-size: -1rem;" required>
+            
+            </div>
+
+            <!-- <div class="menu-form">
+                <label >Status</label>
+                <input value="<%-//orders.status%>" type="text" id="status" name='status' placeholder="Enter remark" style="font-size: -1rem;" required>
+            
+            </div>
+
+            <div class="menu-form">
+                <label >Status</label>
+                <input value="<%-//orders.status%>" type="text" id="status" name='status' placeholder="Enter status" style="font-size: -1rem;" required>
+            
+            </div> -->
+
+               
+   
+       
+        <div  >
+            <button   type="submit" >
+                Add Order</button>
+     
+        </div>
+
+        
+  </form> 
+
+</body>
+
+
+<style>
+
+    
+   .form {
+       color: black;
+      
+       /* border: 1px solid blue; */
+
+   }
+
+   button{
+       
+       
+       margin-top: 5%;
+       color: black;
+       background-color: gray;
+   }
+
+   .form-box {
+       display: flex;
+       flex-direction: column;
+       gap: 2em;
+    border: 1px solid blue;
+   }
+
+   label {
+    display: flex;
+       gap:5%;
+   }
+
+   .menu-edit {
+       color: black;
+       font-size: 30px;
+   }
+</style>
+</html>
+    
+    
+    
+   

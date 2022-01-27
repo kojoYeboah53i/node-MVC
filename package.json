@@ -1,0 +1,33 @@
+{
+  "name": "restaurant-application",
+  "version": "1.0.0",
+  "description": "public",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuzzySmith/Restaurant-Application.git"
+  },
+  "author": "Suzzy Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SuzzySmith/Restaurant-Application/issues"
+  },
+  "homepage": "https://github.com/SuzzySmith/Restaurant-Application#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^6.1.6",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
