@@ -1,2 +1,6 @@
-# ejs-mongodb-controllers-models-routes-nodeJS
- ejs application with node backend
+
+ # ejs application with node backend
+ 
+ - clone repo
+ - npm install 
+ - npm start
